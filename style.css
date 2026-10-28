@@ -1,0 +1,10 @@
+.sec-1{
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #FEF0EB, #E3EBEF, #B0E1F8);
+    margin-top: 50px;
+}
+
+.sec-1_RightImg
+{
+    width: 350px;
+}
