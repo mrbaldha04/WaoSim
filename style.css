@@ -12,3 +12,16 @@
 .sec-2 img{
     width: 30px;
 }
+
+.sec-3 img{
+    border-radius: 10px;
+}
+
+.hero{
+    background-image: url('images/heroBG');
+}
+
+.hero-textBox
+{
+    background-image: linear-gradient(to right, #ffffff, #FFF0ED);
+}

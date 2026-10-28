@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body class="bg-white-100 text-black-700">
@@ -32,12 +33,551 @@
                 <a href="register.html"
                     class="text-gray-700 text-sm font-bold hover:text-blue-600 flex items-center"><img
                         src="https://cdn.waosim.com/landingpage/images/login-signup-icon.svg" alt=""
-                        class="mx-2">Login/SignUp</a> 
+                        class="mx-2">Login/SignUp</a>
             </div>
         </nav>
     </header>
 
     <main>
+
+        <!-- hero -->
+        <section
+            class="hero mx-auto px-4 pt-5 pb-2 flex flex-wrap justify-between rounded-pill bg-white h-auto grid grid-cols-1 md:grid-cols-5">
+            <div class="col-span-5 md:col-span-3 py-10">
+                <h1 class="font-bold text-6xl pt-3 leading-tight my-5">🔥 Global Connectivity <br>Across
+                    <span class="text-orange-500">190+ Countries</span>
+                </h1>
+                <div
+                    class="hero-textBox relative flex items-center rounded-full border-l-4 border-orange-500 bg-white my-10 px-8 py-5 shadow-sm backdrop-blur-sm">
+                    <p class="text-lg md:text-xl font-bold leading-tight text-black sm:text-2xl">
+                        No SIM swaps • No roaming fees • No extra devices
+                    </p>
+                </div>
+                <h5 class="font-semibold text-2xl">Where is your next adventure? 🌍 ✈️</h5>
+                <div class="flex items-center rounded-full px-3 py-3 mt-4 w-full max-w-3xl bg-white">
+                    <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75"
+                        alt="map" class="w-6 h-6 shrink-0 bg-white">
+                    <span class="border-r-2 border-orange-500 mx-2 h-6"></span>
+                    <input type="text" placeholder="Search your destination (Japan, Europe, USA…)"
+                        class="flex-1  placeholder:text-lg min-w-0 outline-none px-3">
+                    <div class="bg-slate-800 py-2 px-3 rounded-full text-2xl text-white">🔍︎ <span
+                            class="font-semibold">Get Connected</span></div>
+                </div>
+            </div>
+            <img src="images/hero.webp" alt="Not"
+                class="sec-1_RightImg hidden md:block w-full max-w-full sm:object-contain justify-content-end md:col-span-2 py-12 mt-10">
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 py-10">
+
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+
+                <button type="button" class="border-2 border-orange-500 bg-white p-3 rounded-2xl drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] flex items-center gap-3 cursor-pointer text-left">
+                    <div class="bg-orange-500 text-white w-11 h-11 rounded-xl flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-fire text-lg"></i>
+                    </div>
+                    <span class="text-gray-900 text-base font-bold">Traveler Favorites</span>
+                </button>
+
+                <button type="button" class="group bg-[#faf8f5] border border-gray-200 rounded-2xl p-3 flex items-center gap-3 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white cursor-pointer text-left">
+                    <div class="w-11 h-11 bg-white border border-gray-200 rounded-xl flex items-center justify-center text-gray-700 shrink-0 group-hover:border-orange-500 group-hover:text-orange-500 transition">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="font-semibold text-gray-800 text-base">Single-Country eSIM Plans</span>
+                </button>
+
+                <button type="button" class="bg-[#faf8f5] group rounded-2xl border border-gray-200 p-3.5 flex items-center gap-3 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white cursor-pointer text-left">
+                    <div class="flex items-center justify-center w-11 h-11 rounded-xl bg-white border border-gray-200 text-gray-700 shrink-0 group-hover:border-orange-500 group-hover:text-orange-500 transition">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <span class="text-base text-gray-800 font-semibold">Multi-Country Regional Plans</span>
+                </button>
+
+                <button type="button" class="border border-gray-200 bg-[#faf8f5] group p-3.5 rounded-2xl flex items-center gap-3 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white text-left cursor-pointer">
+                    <div class="w-11 h-11 shrink-0 rounded-xl border border-gray-200 bg-white text-gray-700 flex items-center justify-center group-hover:border-orange-500 group-hover:text-orange-500 transition">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <span class="font-semibold text-base text-gray-800">Worldwide eSIM Coverage</span>
+                </button>
+
+            </div>
+
+            <div class="border-b border-gray-200 my-8"></div>
+
+            <section class="sec-3 max-w-7xl mx-auto px-4 py-8">
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+                        <!-- 1 -->
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image.webp" Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Japan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.72<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image2.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">South Korea</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.32<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image3.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Taiwan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image4.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Thailand</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+                        <!-- 1 -->
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image.webp" Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Japan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.72<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image2.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">South Korea</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.32<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image3.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Taiwan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image4.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Thailand</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+                        <!-- 1 -->
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image.webp" Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Japan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.72<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image2.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">South Korea</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.32<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image3.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Taiwan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image4.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Thailand</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+                        <!-- 1 -->
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image.webp" Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Japan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.72<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image2.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">South Korea</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0.32<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image3.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Taiwan</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="group relative border border-gray-200 rounded-2xl p-4 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
+
+                        <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                            <div
+                                class="bg-white border border-orange-500 rounded-lg px-5 py-2 font-bold text-sm whitespace-nowrap">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                Most Popular
+                            </div>
+                        </div>
+
+                        <div class="relative rounded-xl overflow-hidden">
+                            <img src="images/image4.webp" alt="Japan" class="w-full h-48 object-cover">
+                            <div class="absolute left-3 top-3 ">
+                                <img src="https://flagcdn.com/w80/jp.png" alt="flag"
+                                    class="object-cover w-8 h-8 rounded-full">
+                            </div>
+
+                            <div
+                                class="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-white border border-white rounded-2xl px-3 py-2">
+                                <h2 class="font-semibold text-base">Thailand</h2>
+                                <div class="px-3 bg-slate-900 text-sm py-2 text-white font-bold rounded-lg ">
+                                    $0<span class="text-orange-300"> USD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </section>
+
+        </section>
+
+
 
         <section
             class="sec-1 max-w-7xl mx-auto px-4 pt-5 pb-2 flex flex-wrap justify-between rounded-pill bg-white mt-5 h-auto grid grid-cols-1 md:grid-cols-3">
@@ -60,14 +600,15 @@
                 alt="Not" class="sec-1_RightImg hidden sm:block w-full sm:object-contain justify-content-end">
         </section>
 
+        <!-- sec-2 -->
         <section class="sec-2 max-w-7xl mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 ">
+
                 <div
                     class="group relative border border-gray-200 rounded-2xl p-6 bg-white shadow-lg border-orange-500 cursor-pointer drop-shadow-[0_0_15px_rgba(249,115,22,0.3)]">
-                    <div
-                        class="absolute -top-5 right-6 bg-orange-500 rounded-xl p-3 bg-orange-500">
-                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75" alt="" class="text-white">
+                    <div class="absolute -top-5 right-6 bg-orange-500 rounded-xl p-3 bg-orange-500">
+                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75"
+                            alt="" class="text-white">
                     </div>
                     <h2 class="font-bold text-md mb-2">
                         Popular Travel eSIM Plans
@@ -81,7 +622,8 @@
                     class="group relative border border-gray-200 rounded-2xl p-6 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
                     <div
                         class="absolute -top-5 right-6 bg-white border border-gray-200 rounded-xl p-3 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
-                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75" alt="" class="group-hover:text-white">
+                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75"
+                            alt="" class="group-hover:text-white">
                     </div>
                     <h2 class="font-bold text-md mb-2">
                         Popular Travel eSIM Plans
@@ -95,7 +637,8 @@
                     class="group relative border border-gray-200 rounded-2xl p-6 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
                     <div
                         class="absolute -top-5 right-6 bg-white border border-gray-200 rounded-xl p-3 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
-                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75" alt="" class="group-hover:text-white">
+                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75"
+                            alt="" class="group-hover:text-white">
                     </div>
                     <h2 class="font-bold text-md mb-2">
                         Popular Travel eSIM Plans
@@ -109,7 +652,8 @@
                     class="group relative border border-gray-200 rounded-2xl p-6 bg-orange-50/50 hover:border-orange-500 hover:shadow-lg transition-all duration-300 cursor-pointer hover:drop-shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:bg-white">
                     <div
                         class="absolute -top-5 right-6 bg-white border border-gray-200 rounded-xl p-3 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300">
-                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75" alt="" class="group-hover:text-white">
+                        <img src="https://main.waosim.com/_next/image?url=https%3A%2F%2Fcdn.waosim.com%2Flandingpage%2Fwaosim-images%2Fhero-banner%2Fsearch-maps.webp&w=48&q=75"
+                            alt="" class="group-hover:text-white">
                     </div>
                     <h2 class="font-bold text-md mb-2">
                         Popular Travel eSIM Plans
@@ -123,6 +667,9 @@
             <div class="border-b border-gray-300 mt-9"></div>
 
         </section>
+
+
+
     </main>
 
 </body>
