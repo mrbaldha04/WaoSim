@@ -30,3 +30,7 @@
 {
     background-image: linear-gradient(to right, #e0f7fb, #f3d5ec);
 }
+
+#review-1, #review-2, #review-3{
+    background-image: linear-gradient(to bottom right, white, white, white, #fce5c8);
+}
